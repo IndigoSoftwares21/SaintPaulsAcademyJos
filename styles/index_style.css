@@ -158,6 +158,12 @@ nav
     transform: translate(-50%,-50%);
     text-align: center;
 }
+.bars
+{
+    color: var(--white);
+    font-size: 40px;
+    display: none;
+}
 .textbox h1
 {
     font-size: 50px;
@@ -250,6 +256,49 @@ nav
 
 @media screen and (max-width:905px)
 {
+
+    .textbox
+{
+    color: white;
+    width: 98%;
+   
+}
+.bars
+{
+    display: block;
+    margin-left: auto;
+}
+
+    .textbox h1
+    {
+        font-size:30px;
+        
+      
+    }
+    .textbox p
+    {
+        font-size: 15px;
+        margin-bottom: 20px;
+    
+    }
+    .textbox a
+    {
+        font-size: 17px;
+      
+        
+    }
+
+    .nav-links
+{
+    flex: 1;
+    text-align: right;
+    flex-direction: column;
+
+}
+.nav-links ul
+{
+    display: none;
+}
 
 }
 
