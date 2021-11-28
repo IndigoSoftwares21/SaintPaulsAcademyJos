@@ -1,0 +1,241 @@
+:root {
+    --blue: #010323;
+    --white: #ffffff;
+    --maroon: #640000;
+    --font1: 'Raleway', sans-serif;
+    --font2: 'Bebas Neue', cursive;
+  }
+
+*
+{
+    
+    padding: 0;
+    margin: 0;
+    position: relative;
+    
+}
+
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: 
+    /* top, transparent red */
+    linear-gradient(
+        rgba(1,3,35,0.6), 
+        rgba(1,3,35,0.6)
+    ),
+    /* your image */
+    url(wide.jpg);
+    position: relative;
+}
+.logo
+{
+    width: 70px;
+    height: 50px;
+    background: transparent;
+}
+.tag
+{
+    text-decoration: none;
+    color: white;
+    font-family: var(--font2);
+    
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    padding: 3px;
+}
+.tag p
+{
+    margin-top: 12px;
+    letter-spacing: 1.5px;
+    font-size: 25px;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 2%;
+    align-items: center;
+    
+    max-width:100%;
+    height: fit-content;
+    background-color: rgba(0,0,0,0.6);
+
+     border-radius: 2px;
+ 
+     backdrop-filter: blur(3px);
+    
+}
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li 
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+
+  
+}
+.nav-links ul
+{
+    padding: 2px;
+    margin-left: auto;
+
+   
+}
+.nav-links ul li a
+{
+ text-decoration: none;
+ font-family: var(--font1);
+ color: var(--white);
+ font-size: 17px;
+
+ padding: 5px;
+ 
+}
+
+.nav-links ul ul{
+    top: 30px;
+    position: absolute;
+    display: none;
+    text-align: left;
+}
+
+.nav-links ul li:hover > ul
+{
+    display: block;
+}
+.nav-links ul ul:hover
+{
+    display: block;
+}
+
+.nav-links ul ul li
+{
+    width: 150px;
+    background-color: rgba(0,0,0,0.6);
+     backdrop-filter: blur(3px);
+     float: none;
+     display: list-item;
+     position: relative;
+     
+
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    margin: auto;
+    height: 2px;
+    background: var(--maroon);
+    display: block;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+.caret
+{
+    color: var(--white);
+}
+.textbox
+{
+    color: white;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox h1
+{
+    font-size: 50px;
+    text-decoration: underline var(--maroon);
+    margin-bottom: 5px;
+    font-family: var(--font1);
+}
+.textbox p
+{
+    font-size: 17px;
+    margin-bottom: 20px;
+
+}
+.textbox a
+{
+    font-size: 20px;
+    color: var(--white);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.6);
+     backdrop-filter: blur(3px);
+     text-decoration: none;
+     border-radius: 10px;
+    
+}
+.textbox a:hover{
+
+    background-color: rgba(50,50,50,0.6);
+
+}
+.counter
+{
+    
+    width: 100%;
+    background-color: var(--blue);
+    height: fit-content;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card
+{
+    background-color: var(--white);
+    height: 270px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+    border-radius: 20px;
+    
+    
+}
+.card span
+{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+.cardicon
+{
+    
+    font-size: 100px;
+    color: var(--maroon);
+}
+.card span h1{
+    font-size: 35px;
+    font-family: var(--font1);
+}
+.card span p
+{
+    font-size: 20px;
+    font-family: var(--font1);
+}
+
+
+
+

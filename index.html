@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Saint Paul's Academy Jos | Home</title>
+    <!---------------------------------  Style Sheet--------------------------------------------------->
+    <link rel="stylesheet" href="styles/index_style.css">
+    <!---------------------------------  Style Sheet--------------------------------------------------->
+
+    <!---------------------------------  ION-icons--------------------------------------------------->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!---------------------------------  ION-ICONS--------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="header">
+        
+        <nav>
+            <a class="tag" href="index.html">
+                <img class="logo" src="images/spajlogo.png" alt="">
+                <p>
+                    Saint Paul's Academy
+                </p>
+               
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Extracurricular</a>
+                        <ion-icon class="caret" name="caret-down-outline"></ion-icon>
+                        <ul>
+                            <li><a href="#">Clubs</a></li>
+                            <li><a href="#">Sports</a></li>
+                        </ul></li>
+                    <li><a href="#">Admission</a><ion-icon class="caret" name="caret-down-outline"></ion-icon>
+                        <ul>
+                            <li><a href="#">Purchase Form</a></li>
+                            <li><a href="#">Check Result</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+            <div class="textbox" data-0-top="opacity:0; left:0" data-200-top="opacity:1; left:50%">
+                <h1> <img  width="50px" src="images/torch.png" alt="">SHOW THE LIGHT <img  width="50px" src="images/torch.png" alt=""></h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis nulla deserunt ratione dolorum recusandae alias 
+                    mollitia, eos numquam aliquam perferendis illo saepe, tempora reiciendis repellendus expedita veniam iure dicta et
+                     sapiente quibusdam cumque. Ab officiis sequi quos velit. Ab corporis esse architecto repellendus nesciunt temporibus,
+                      harum atque sint doloribus quaerat velit voluptatem ipsum tenetur
+                     nulla voluptas optio unde voluptate quidem, maiores assumenda! Autem aut, consequatur vitae aperiam iusto nam saepe!
+                </p>
+                <a href="#">Learn More</a> 
+            </div>
+        
+       
+    </section>
+
+    <section id="counter" class="counter" >
+        
+      
+            <div class="card" data-start="opacity:0;" data-end="opacity:1;">
+                <span>
+                    <ion-icon class="cardicon" name="person-outline"></ion-icon>
+                    <h1 data-target="100" class="count">0</h1>
+                    <p>Qualified Teachers</p>
+
+                </span>
+            </div>
+            <div class="card" data-start="opacity:0;" data-end="opacity:1;">
+                <span>
+                    <ion-icon class="cardicon" name="school-outline"></ion-icon>
+                   
+                    <h1 data-target="800" class="count">0</h1>
+                    <p>Students</p>
+
+                </span>
+            </div>
+            <div class="card" data-start="opacity:0;" data-end="opacity:1;">
+                <span>
+                    <ion-icon class="cardicon" name="medal-outline"></ion-icon>
+                    <h1 data-target="50" class="count">0</h1>
+                    <p>Olympiad Medals</p>
+
+                </span>
+            </div>
+            <div class="card" data-start="opacity:0;" data-end="opacity:1;">
+                <span>
+                    <ion-icon class="cardicon" name="rocket-outline"></ion-icon>
+                    <h1 data-target="20" class="count">0</h1>
+                    <p>Years of Excellence</p>
+
+                </span>
+            </div>
+          
+       
+           
+
+    </section>
+  
+    <!--Skorrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr-->
+    <script src="skrollr.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+        </script>
+
+        <script src="script.js">
+
+        </script>
+<script>
+
+    // Selector
+const counters = document.querySelectorAll('.count');
+// Main function
+for(let n of counters) {
+  const updateCount = () => {
+    const target = + n.getAttribute('data-target');
+    const count = + n.innerText;
+    const speed = 500; // change animation speed here
+    const inc = target / speed; 
+    if(count < target) {
+      n.innerText = Math.ceil(count + inc);
+      setTimeout(updateCount, 1);
+    } else {
+      n.innerText = target+"+";
+    }
+  }
+  updateCount();
+}
+</script>
+        
+    
+</body>
+</html>
