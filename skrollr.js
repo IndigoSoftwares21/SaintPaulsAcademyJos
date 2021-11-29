@@ -279,7 +279,7 @@
 		})());
 
 		if(_isMobile) {
-			_skrollrBody = document.getElementById(options.skrollrBody || DEFAULT_SKROLLRBODY);
+			return false;
 
 			//Detect 3d transform if there's a skrollr-body (only needed for #skrollr-body).
 			if(_skrollrBody) {
