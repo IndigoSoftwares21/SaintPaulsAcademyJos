@@ -14,6 +14,9 @@
     
     
 }
+body{
+    position: static;
+}
 
 .header
 {
@@ -29,7 +32,9 @@
     ),
     /* your image */
     url(wide.jpg);
-    position: relative;
+   
+    position:relative;
+    z-index: 1;
 }
 .logo
 {
@@ -74,6 +79,7 @@ nav
 {
     flex: 1;
     text-align: right;
+    
 
 }
 .nav-links ul li 
@@ -89,7 +95,7 @@ nav
 {
     padding: 2px;
     margin-left: auto;
-
+  
    
 }
 .nav-links ul li a
@@ -127,6 +133,8 @@ nav
      float: none;
      display: list-item;
      position: relative;
+    
+    
      
 
 }
@@ -157,6 +165,9 @@ nav
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    
+    
+    
 }
 .bars
 {
@@ -170,6 +181,8 @@ nav
     text-decoration: underline var(--maroon);
     margin-bottom: 5px;
     font-family: var(--font1);
+    position: relative;
+   
 }
 .textbox p
 {
@@ -189,11 +202,59 @@ nav
      text-decoration: none;
      border-radius: 10px;
     
+    
 }
 .textbox a:hover{
 
     background-color: rgba(50,50,50,0.6);
 
+}
+.principal
+{
+    width: 100%;
+    height: fit-content;
+    background: var(--maroon);
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.b{
+
+    width: 70%;
+    color: var(--white);
+    font-size: 18px;
+
+}
+.m
+{
+    color: var(--white);
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: var(--font1);
+}
+.mx
+{
+    color: var(--white);
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: var(--font1);
+    display: none;
+}
+
+
+.ii
+{
+       
+        height: 400px;
+        min-width: 300px;
+        color: var(--white);
+        font-family: var(--font1);
+        background: url(Savethis.JPG);
+        background-size: cover;
+        border-radius: 20px;
 }
 .counter
 {
@@ -252,15 +313,51 @@ nav
     font-size: 20px;
     font-family: var(--font1);
 }
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
+/***************************************************MEDIA QUERIES***********************************************/
 
-
-@media screen and (max-width:905px)
+@media screen and (max-width:1000px)
 {
+
+    .header
+{
+
+    z-index: 1;
+}
 
     .textbox
 {
     color: white;
     width: 98%;
+    z-index: -1;
    
 }
 .bars
@@ -297,8 +394,78 @@ nav
 }
 .nav-links ul
 {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: absolute;
+    right: 0;
+    overflow-x: hidden;
+    top: 64px;
+    font-size: 20px;
+    background: var(--blue);
+   display: none;
+    border-radius: 20px 0px 0px 20px;
+    z-index: 10;
+   height: 300px;
+ 
+   
+
 }
 
+
+
+
+
+
+.principal
+{
+    width: 100%;
+    height: fit-content;
+    background: var(--maroon);
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.b{
+
+    width: 100%;
+    color: var(--white);
+    font-size: 18px;
+
+}
+.m
+{
+   display: none;
+}
+
+
+
+
+.ii
+{
+       
+        height: 270px;
+        min-width: 170px;
+        width: 200px;
+        color: var(--white);
+        font-family: var(--font1);
+        background: url(Savethis.JPG);
+        background-size: cover;
+        border-radius: 20px;
+}
+.mx
+{
+    
+    font-size: 35px;
+    margin-bottom: 10px;
+    
+    display: block;
+}
 }
 
