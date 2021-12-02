@@ -42,15 +42,24 @@ function menu()
 {
     
     var menu = document.getElementById('menu')
+    var sub_menu = document.getElementById('expandextra')
+    var sub_menu2 = document.getElementById('expandadm')
 
-    if (menu.style.display=="flex") {
+    if (menu.style.right == "-230px") {
 
-        menu.style.display= "none";
+        menu.style.right = "0px";
+        sub_menu.style.right = "0px";
+        sub_menu2.style.right = "0px";
+        
         
     }
     else
     {
-        menu.style.display= "flex";
+        menu.style.right = "-230px"
+        sub_menu.style.right = "-230px"
+        sub_menu2.style.right = "-230px"
+        sub_menu.style.display= "none";
+        sub_menu2.style.display= "none";
     }
 
     
