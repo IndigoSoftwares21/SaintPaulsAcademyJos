@@ -1,3 +1,24 @@
+window.onload = function(){
+    if (document.readyState === 'complete') {
+        // The page is fully loaded
+        var loader =  document.getElementById('loader')
+   
+        loader.style.display= "none";
+      }
+        
+      
+  
+   };
+
+
+function load() {
+   
+    
+    
+    
+}
+
+
 function expandextra()
 { var expandextra = document.getElementById('expandextra')
 var expandadm = document.getElementById('expandadm')

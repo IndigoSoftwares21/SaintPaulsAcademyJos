@@ -313,6 +313,65 @@ nav
     font-size: 20px;
     font-family: var(--font1);
 }
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--maroon);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .loadertxt
+  {
+      color: var(--white);
+      margin: 3px;
+      font-family: var(--font1);
+      font-weight: 200;
+      
+  }
+  .loader {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    border-radius: 50%;
+    border: 10px dotted #Fff;
+    animation: loader 2s infinite ease;
+  }
+  .ll
+  {
+    animation-direction: reverse;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px dotted #Fff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+  @keyframes loader-inner {
+    0% { transform: rotate(360deg);}
+    25% { transform: rotate(360deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(180deg);}
+    100% { transform: rotate(0deg);}
+  }
 /***************************************************MEDIA QUERIES***********************************************/
 /***************************************************MEDIA QUERIES***********************************************/
 /***************************************************MEDIA QUERIES***********************************************/
