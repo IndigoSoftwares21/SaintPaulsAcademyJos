@@ -405,9 +405,9 @@ nav
 
 @media screen and (max-width:1000px)
 {
- body{
-    overflow-x: hidden;
- }
+    html, body {
+        overflow-x:hidden 
+      } 
     .header
 {
 
@@ -556,4 +556,3 @@ nav
     display: block;
 }
 }
-
