@@ -182,13 +182,14 @@ nav
     margin-bottom: 5px;
     font-family: var(--font1);
     position: relative;
+    
    
 }
 .textbox p
 {
     font-size: 17px;
     margin-bottom: 20px;
-
+    
 }
 .textbox a
 {
@@ -455,6 +456,7 @@ nav
     {
         font-size: 15px;
         margin-bottom: 20px;
+        padding: 7px;
     
     }
     .textbox a
